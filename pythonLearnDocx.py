@@ -19,9 +19,9 @@ recording_filename = "input.wav"
 selected_language = "en"
 
 # Whisper & DeepSeek API keys
-openai.api_key = "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"
+openai.api_key = ""
 client = DeepSeekOpenAI(
-    api_key="sk-1687a58d9aa04ebc878f20022bb60db6", base_url="https://api.deepseek.com")
+    api_key="", base_url="https://api.deepseek.com")
 
 generated_script_path = "C:\\Users\\iszi-\\Documents\\CS and CEng Projects\\DeepseekMyCobot\\generated_script.py"
 docs_path= "C:\\Users\\iszi-\\Documents\\CS and CEng Projects\\DeepseekMyCobot\\Documentation"
