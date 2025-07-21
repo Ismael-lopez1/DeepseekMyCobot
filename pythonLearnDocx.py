@@ -9,9 +9,13 @@ from PyQt5.QtWidgets import (QApplication, QWidget, QVBoxLayout, QPushButton, QC
 from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import Qt
 from docx import Document
+from dotenv import load_dotenv
 import openai
 from openai import OpenAI as DeepSeekOpenAI
 
+load_dotenv()
+OPENAI_KEY = os.getenv("OPENAI_KEY")
+DEEPSEEK_KEY = os.getenv("DEEPSEEK_KEY")
 #Globals
 recording = None
 fs = 44100
@@ -19,9 +23,15 @@ recording_filename = "input.wav"
 selected_language = "en"
 
 # Whisper & DeepSeek API keys
+<<<<<<< HEAD
 openai.api_key = ""
 client = DeepSeekOpenAI(
     api_key="", base_url="https://api.deepseek.com")
+=======
+openai.api_key = OPENAI_KEY
+client = DeepSeekOpenAI(
+    api_key=DEEPSEEK_KEY, base_url="https://api.deepseek.com")
+>>>>>>> 4172694 (Hidden secret key)
 
 generated_script_path = "C:\\Users\\iszi-\\Documents\\CS and CEng Projects\\DeepseekMyCobot\\generated_script.py"
 docs_path= "C:\\Users\\iszi-\\Documents\\CS and CEng Projects\\DeepseekMyCobot\\Documentation"
