@@ -1,1 +1,1 @@
-# ProyectoMyCobot-Deepseek
+# DeepseekMyCobot
